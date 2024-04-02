@@ -1,21 +1,31 @@
 ---
+import { Image } from 'astro:assets';
+import diagram from '../assets/images/diagram.png';
 ---
 
-<section>
+<section class="px-5 mt-20 mb-20 grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
-    <article>
-        <h2>Problemet med Plastik</h2>
-        <h3>Plastikforurening truer livet i havet og på jorden</h3>
-        <p>Problemet med plastik starter med plastikforureningen, som er en ophobning af plastaffald der ender ude i naturen. Dette affald skader dyreliv, økosystemer, samt menneskets sundhed. Denne forurening kommer af vores overforbrug, samt vores dårlig håndtering af plastprodukter, og da plast bruger mange hundred år på at blive nedbrudt, så er det med til at forurene vores natur; Specielt vores have. 95% af det plastik der ender i havet, falder til bunds, hvor de resterende 5% af plastikken flyder rundt, og danner plastsupper eller bliver skyllet op på strandene.</p>
+    
+         <article class="grid gap-5">
+            <h2>Problemet med Plastik</h2>
 
-        <h3></h3>
-        <p>Under plastikkens nedbrydelse proces, bliver plastikken omdannet til mikroplastik, som betegnes for at være under fem millimeter i dens størrelse. Det meste mikroplastik kommer af plastik produkter som tøj, dæk, plastikposer, emballager, hygiejne produkter osv, der er blevet slidt eller nedbrudt i naturen. </p>
-        <p>Mikroplast finder vej til alle typer økosystemer på Jorden – selv dybhavets bund og sneklædte alpetoppe - og udgør en potentiel sundhedsrisiko for både dyr og mennesker, som kan indtage partiklerne via føde, drikkevand eller fra luften. </p>
-        <p>Det er derfor alt afgørende at vi skal blive bedre til at passe på miljøet og laver alternativer til plastik.</p>
+            <h3 class="pt-10">Plastikforurening truer livet i havet og på jorden</h3>
+            <p>Problemet med plastik starter med plastikforureningen, som er en ophobning af plastaffald der ender ude i naturen. Dette affald skader dyreliv, økosystemer, samt menneskets sundhed. Denne forurening kommer af vores overforbrug, samt vores dårlig håndtering af plastprodukter, og da plast bruger mange hundred år på at blive nedbrudt, så er det med til at forurene vores natur; Specielt vores have. 95% af det plastik der ender i havet, falder til bunds, hvor de resterende 5% af plastikken flyder rundt, og danner plastsupper eller bliver skyllet op på strandene.</p>
+    
+            <article class="self-center">
+            <Image src={diagram} alt="diagram." width="2000" height="2000" class="object-center lg:hidden"/>
+            </article>
+            
+            <h3 class=" lg:pt-20">Mikroplasik i din hverdag</h3>
+            <p>Under plastikkens nedbrydelse proces, bliver plastikken omdannet til mikroplastik, som betegnes for at være under fem millimeter i dens størrelse. Det meste mikroplastik kommer af plastik produkter som tøj, dæk, plastikposer, emballager, hygiejne produkter osv, der er blevet slidt eller nedbrudt i naturen. </p>
+            <p>Mikroplast finder vej til alle typer økosystemer på Jorden – selv dybhavets bund og sneklædte alpetoppe - og udgør en potentiel sundhedsrisiko for både dyr og mennesker, som kan indtage partiklerne via føde, drikkevand eller fra luften. </p>
+            <p>Det er derfor alt afgørende at vi skal blive bedre til at passe på miljøet og laver alternativer til plastik.</p>
 
-    </article>
+        </article>
 
-    <article>
-        <!--   <Image src={brev} alt="icon brev." width="75" height="250"/> -->
-    </article>
+        <article class="self-center">
+            <Image src={diagram} alt="diagram." width="2000" height="2000" class="object-center hidden lg:block"/>
+        </article>
+    
+
 </section>
