@@ -1,13 +1,49 @@
 ---
-
+import { Image } from 'astro:assets';
+import tekstil from "../assets/images/Tekstik.svg";
+import plast from "../assets/images/plast.svg";
+import genbrug from "../assets/images/Genbrug.svg";
+// import underskrift from "../assets/images/underskrift.mp4";
+import plastik from "../assets/images/Plastik.svg";
+import organisk from "../assets/images/organisk.svg";
 ---
 <section class="bg-morkblaa">
     <h2>HVAD KAN JEG GØRE</h2>
     <article>
         <p>Alle kan gøre noget, men ingen kan gøre alt. Det hele starter med DIG, de ændringer, du kan skabe i din hverdag, og hvordan du kan og har lyst til at støtte plastik-sagen.</p>
     </article>
-    <article>
-        
+    <article class="grid lg:grid-cols-2">
+        <div>
+            <Image src={tekstil} alt=""/>
+            <Image src={plast} alt=""/>
+            <Image src={genbrug} alt=""/>
+            <div >
+                <Image src={plastik} alt=""/>
+                <Image src={organisk} alt=""/>
+            </div>
+            <!-- <Image src={underskrift} alt=""/> -->
+        </div>
+        <div>
+            <div>
+                <h3>Undgå at købe tøj af syntetisk stof</h3>
+                <p>Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
+            </div>
+            <div>
+                <h3>Drop engangsplastik og plastikposer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime eum rem ipsa voluptas delectus. Ea modi ex rem fugiat aut exercitationem aspernatur magnam nesciunt unde, quibusdam eum. Ullam, maiores.</p>
+            </div>
+            <div>
+                <h3>Genbrug altid hvis du kan det også bedre end genanvendelse</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>
+            </div>
+            <div>
+                <h3>Vælg glas, stål eller papir fremfor plastik når du kan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloribus consectetur iusto dolor illum! Porro, assumenda veniam. Soluta esse voluptatum facilis deserunt. Aliquam in et officiis, rem odio modi nulla?</p>
+            </div>
+            <div>
+                <h3>Skriv under og kræv en ambitiøs plastik traktat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus, optio nisi tempora enim quisquam quae impedit molestias modi magni nesciunt quasi. Fugiat est animi incidunt vel possimus ex quos.</p>
+            </div>
+        </div>
     </article>
-
 </section>
