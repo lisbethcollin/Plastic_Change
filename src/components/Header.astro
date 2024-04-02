@@ -1,18 +1,26 @@
 ---
+import { Image } from 'astro:assets';
+import logo from "../assets/images/logo_plastik.svg"
+import Button from '../components/Button.astro';
 ---
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full" >
+<div x-data="{ showmenu: false }" class="p-4 fixed w-full" >
     <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
-            <a href="#link1">Site logo</a>
+            <a href="#link1"> <Image src={logo} alt=""/></a>
+
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-4">
-                <li class=""><a href="#link1">Link 1</a></li>
-                <li class=""><a href="#link2">Link 2</a></li>
-                <li class=""><a href="#link3">Link 3</a></li>
-                <li class=""><a href="#link4">Link 4</a></li>
+                <li class=""><a href="#link1">Hvad er plastikforureningen?</a></li>
+                <li class=""><a href="#link2">Hvad kan jeg gøre?</a></li>
+                <li class=""><a href="#link3">Støt vores sag</a></li>
+                <li class=""><a href="#link4">Shop</a></li>
+                <li class=""><a href="#link4">Hvem er Plastic Change</a></li>
             </ul>
         </nav>
+        <div>
+          <Button>Støt nu</Button>
+        </div>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
