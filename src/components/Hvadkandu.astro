@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import tekstil from "../assets/images/Tekstik.svg";
 import plast from "../assets/images/plast.svg";
 import genbrug from "../assets/images/Genbrug.svg";
-// import underskrift from "../assets/images/underskrift.mp4";
+import underskrift from "../assets/images/underskrift.svg";
 import plastik from "../assets/images/Plastik.svg";
 import organisk from "../assets/images/organisk.svg";
 ---
@@ -13,37 +13,55 @@ import organisk from "../assets/images/organisk.svg";
         <p>Alle kan gøre noget, men ingen kan gøre alt. Det hele starter med DIG, de ændringer, du kan skabe i din hverdag, og hvordan du kan og har lyst til at støtte plastik-sagen.</p>
     </article>
     <article class="grid lg:grid-cols-2">
-        <div>
-            <Image src={tekstil} alt=""/>
-            <Image src={plast} alt=""/>
-            <Image src={genbrug} alt=""/>
-            <div >
+        <div class="sticky">
+            <Image src={tekstil} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa"/>
+            <Image src={plast} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa"/>
+            <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa"/>
+            <div class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa">
                 <Image src={plastik} alt=""/>
                 <Image src={organisk} alt=""/>
             </div>
-            <!-- <Image src={underskrift} alt=""/> -->
+            <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa"/>
+                <!-- <video width="" height="" autoplay muted loop>
+                    <source src="underskrift_grafik.mov" type="video/mov">
+                    <source src="underskrift_grafik.webm" type="video/webm">
+                </video> -->
         </div>
-        <div>
-            <div>
+        <div class="sticky">
+            <div class="mt-4 h-screen w-100 parallaxcontainer">
                 <h3>Undgå at købe tøj af syntetisk stof</h3>
-                <p>Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
+                <p class="mx-auto p-10">Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
             </div>
-            <div>
+            <div class="mt-4 h-screen w-100 parallaxcontainer">
                 <h3>Drop engangsplastik og plastikposer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime eum rem ipsa voluptas delectus. Ea modi ex rem fugiat aut exercitationem aspernatur magnam nesciunt unde, quibusdam eum. Ullam, maiores.</p>
+                <p class="mx-auto p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime eum rem ipsa voluptas delectus. Ea modi ex rem fugiat aut exercitationem aspernatur magnam nesciunt unde, quibusdam eum. Ullam, maiores.</p>
             </div>
-            <div>
+            <div class="mt-4 h-screen w-100 parallaxcontainer">
                 <h3>Genbrug altid hvis du kan det også bedre end genanvendelse</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>
+                <p class="mx-auto p-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>
             </div>
-            <div>
+            <div class="mt-4 h-screen w-100 parallaxcontainer">
                 <h3>Vælg glas, stål eller papir fremfor plastik når du kan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloribus consectetur iusto dolor illum! Porro, assumenda veniam. Soluta esse voluptatum facilis deserunt. Aliquam in et officiis, rem odio modi nulla?</p>
+                <p class="mx-auto p-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloribus consectetur iusto dolor illum! Porro, assumenda veniam. Soluta esse voluptatum facilis deserunt. Aliquam in et officiis, rem odio modi nulla?</p>
             </div>
-            <div>
+            <div class="mt-4 h-screen w-100 parallaxcontainer">
                 <h3>Skriv under og kræv en ambitiøs plastik traktat</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus, optio nisi tempora enim quisquam quae impedit molestias modi magni nesciunt quasi. Fugiat est animi incidunt vel possimus ex quos.</p>
+                <p class="mx-auto p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus, optio nisi tempora enim quisquam quae impedit molestias modi magni nesciunt quasi. Fugiat est animi incidunt vel possimus ex quos.</p>
             </div>
         </div>
     </article>
 </section>
+
+<script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
+    document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+  scroll(animate(elementderskalparallaxes, { y: [50, 500] }), {
+    target: elementderskalparallaxes
+  });
+});
+/* document.querySelectorAll(".parallaxcontainermedflereelementer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes2 = parallaxcontainer.querySelector(".paragraf2");
+  scroll(animate(elementderskalparallaxes2, { y: [ 0, 800] }), { target: elementderskalparallaxes2 });
+}); */
+</script>
