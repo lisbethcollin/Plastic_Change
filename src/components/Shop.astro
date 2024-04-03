@@ -5,8 +5,8 @@ import kop from '../assets/images/kop.svg';
 import termo from '../assets/images/termoflaske.svg';
 import shirt from '../assets/images/t-shirt.svg';
 ---
-<div class="bg-morkblaa py-20 text-lysblaa">
-    <h2 class="text-8xl mt-20 max-w-6xl mx-auto pb-10 font-komu">Vi donerer 5% af overskuddet</h2>
+<div class="bg-morkblaa py-20 text-lysblaa px-8">
+    <h2 class="text-7xl lg:text-8xl mt-20 max-w-6xl mx-auto pb-10 font-komu">Vi donerer 5% af overskuddet</h2>
     <section class="mb-20 grid gap-5 lg:grid-cols-2 lg:gap-20 max-w-6xl mx-auto">
         <p class="grid gap-5 text-xl">Udover at støtte med bidrag og ændre dine egne vaner kan du også støtte plastic change i vores shop. Vi har selvfølgelig sørget for at alle produkterne er fri for plastik. </p>
        
@@ -18,7 +18,7 @@ import shirt from '../assets/images/t-shirt.svg';
                 <Image src={termo} alt="termoflaske" class=""/>
             </div>    
         </article>
-        <div class="justify-self-center lg:hidden"><button>knap</button></div>
+        <div class="justify-self-center lg:hidden pt-10"><Button>Gå til shoppen</Button></div>
 
 <!-- web -->
         <article class="grid">
@@ -27,7 +27,7 @@ import shirt from '../assets/images/t-shirt.svg';
                 <Image src={termo} alt="termoflaske" class="hidden lg:block"/>
                 <Image src={shirt} alt="t-shirt" class="hidden lg:block"/>
             </div>
-            <div class="grid justify-self-center pt-10"> <Button class="hidden lg:block">Gå til shoppen</Button></div>
+            <div class="justify-self-center pt-10 hidden lg:grid"><Button>Gå til shoppen</Button></div>
         </article>
     </section>
 </div>
