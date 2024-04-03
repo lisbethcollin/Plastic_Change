@@ -7,12 +7,17 @@ import HvadKanDu from "../components/Hvadkandu.astro";
 import Om from "../components/Omplastic.astro";
 import Shop from "../components/Shop.astro";
 import Doner from "../components/Doner.astro";
+import { Image } from 'astro:assets';
+import problem from "../assets/images/problem_img.png";
+import om from "../assets/images/om_img.png";
 ---
 <MainLayout title="Titel">
 	<Hero></Hero>
 	<Problemet></Problemet>
+	<Image src={problem} alt="plastik pose i vand" class="w-full"/>
 	<HvadKanDu></HvadKanDu>
 	<Doner></Doner>
 	<Shop></Shop>
 	<Om></Om>
+	<Image src={om} alt="plastik flaske i vand" class="w-full"/>
 </MainLayout>
