@@ -23,8 +23,8 @@ module.exports = {
 
       fontFamily: {
         komu: ["komu-a", "sans-serif"],
-        roboto: ["roboto, sans-serif"],
-        rubik: ["rubik, sans-serif"],
+        roboto: ["roboto", "sans-serif"],
+        rubik: ["rubik", "sans-serif"],
       },
     },
   },
