@@ -55,23 +55,37 @@ import organisk from "../assets/images/organisk.svg";
 <section class="bg-morkblaa">
     <h2>HVAD KAN JEG GØRE</h2>
     <p>Alle kan gøre noget, men ingen kan gøre alt. Det hele starter med DIG, de ændringer, du kan skabe i din hverdag, og hvordan du kan og har lyst til at støtte plastik-sagen.</p>
-    <article class="grid lg:grid-cols-2 sticky">
-        <Image src={tekstil} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa lg:order-2"/>
-        <p class="mt-4 h-screen w-100 parallaxcontainer lg:order-1 mx-auto p-10"><span>Undgå at købe tøj af syntetisk stof</span><br><br>Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
-        <Image src={plast} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa lg:order-4"/>
-        <div class="mt-4 h-screen w-100 parallaxcontainer lg:order-3">
+    <article class="hidden lg:grid grid-cols-2 sticky">
+        <Image src={tekstil} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa order-2"/>
+        <p class="mt-4 h-screen w-100 parallaxcontainer order-1 mx-auto p-10"><span>Undgå at købe tøj af syntetisk stof</span><br><br>Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
+        <Image src={plast} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa order-4"/>
+        <p class="mt-4 h-screen w-100 parallaxcontainer order-3 mx-auto p-10"><span>Drop engangsplastik og plastikposer</span><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime eum rem ipsa voluptas delectus. Ea modi ex rem fugiat aut exercitationem aspernatur magnam nesciunt unde, quibusdam eum. Ullam, maiores.</p>
+        <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa order-6"/>
+        <p class="mt-4 h-screen w-100 parallaxcontainer order-5 mx-auto p-10"><span>Genbrug altid hvis du kan det også bedre end genanvendelse </span><br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>
+        <Image src={organisk} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa order-8"/>
+        <p class="mt-4 h-screen w-100 parallaxcontainer order-7 mx-auto p-10"><span>Vælg glas, stål eller papir fremfor plastik når du kan</span><br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloribus consectetur iusto dolor illum! Porro, assumenda veniam. Soluta esse voluptatum facilis deserunt. Aliquam in et officiis, rem odio modi nulla?</p>
+        <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa order-10"/>
+        <p class="mt-4 h-screen w-100 parallaxcontainer order-9 mx-auto p-10"><span>Skriv under og kræv en ambitiøs plastik traktat</span><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus, optio nisi tempora enim quisquam quae impedit molestias modi magni nesciunt quasi. Fugiat est animi incidunt vel possimus ex quos.</p>
+    </article>
+    <article class="lg:hidden grid sticky">
+        <div class="grid items-center sticky top-0 h-screen w-100 bg-morkblaa">
+            <Image src={tekstil} alt="" class="flex items-center top-0"/>
+            <p class="mx-auto p-10"><span>Undgå at købe tøj af syntetisk stof</span><br><br>Syntetisk tøj frigiver mikro- og nanoplast, både når du går i det og når du vasker og stryger. Mange af partiklerne ender i luften, og du kan komme til at indånde det.</p>
+        </div>
+        <div class="grid items-center sticky top-0 h-screen w-100 bg-morkblaa">
+            <Image src={plast} alt="" class="flex items-center top-0"/>
             <p class="mx-auto p-10"><span>Drop engangsplastik og plastikposer</span><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime eum rem ipsa voluptas delectus. Ea modi ex rem fugiat aut exercitationem aspernatur magnam nesciunt unde, quibusdam eum. Ullam, maiores.</p>
         </div>
-        <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa lg:order-6"/>
-        <div class="mt-4 h-screen w-100 parallaxcontainer lg:order-5">
-            <p class="mx-auto p-10"><span>Genbrug altid hvis du kan det også bedre end genanvendelse </span><br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>
+        <div class="grid items-center sticky top-0 h-screen w-100 bg-morkblaa">
+            <Image src={genbrug} alt="" class="flex items-center top-0"/>
+            <p class="w-100 mx-auto p-10"><span>Genbrug altid hvis du kan det også bedre end genanvendelse </span><br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum saepe voluptas quis in sit id inventore aperiam explicabo, quasi pariatur, similique est corrupti, voluptatem consequatur labore error optio minus.</p>    
         </div>
-        <Image src={organisk} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa lg:order-8"></Image>/>
-        <div class="mt-4 h-screen w-100 parallaxcontainer lg:order-7">
+        <div class="grid items-center sticky top-0 h-screen w-100 bg-morkblaa">
+            <Image src={organisk} alt="" class="flex items-center top-0"/>
             <p class="mx-auto p-10"><span>Vælg glas, stål eller papir fremfor plastik når du kan</span><br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloribus consectetur iusto dolor illum! Porro, assumenda veniam. Soluta esse voluptatum facilis deserunt. Aliquam in et officiis, rem odio modi nulla?</p>
         </div>
-        <Image src={genbrug} alt="" class="flex items-center sticky top-0 h-screen w-100 bg-morkblaa lg:order-10"/>
-        <div class="mt-4 h-screen w-100 parallaxcontainer lg:order-9">
+        <div class="grid items-center sticky top-0 h-screen w-100 bg-morkblaa">
+            <Image src={genbrug} alt="" class="flex items-center top-0"/>
             <p class="mx-auto p-10"><span>Skriv under og kræv en ambitiøs plastik traktat</span><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus, optio nisi tempora enim quisquam quae impedit molestias modi magni nesciunt quasi. Fugiat est animi incidunt vel possimus ex quos.</p>
         </div>
     </article>
