@@ -1,13 +1,11 @@
 ---
 import Button from '../components/Button.astro';
 ---
-<section class="bg-[url('/public/baggrund_mobil.jpg')] bg-cover md:bg-[url('/public/hav_baggrund.jpg')] h-full w-screen">
-    <video width="" height="" autoplay muted loop>
-                    <source src="hero.mov" type="video/mov">
-                    <source src="hero.webm" type="video/webm">
-                </video>
-                
-<div class="flex flex-col justify-center align-middle text-lysblaa mx-auto">
+<section class="relative flex items-center justify-center h-screen mb-12">
+    
+
+
+    <div class="relative z-20 flex flex-col justify-center align-middle text-lysblaa mx-auto">
 
     <div>
 
@@ -22,5 +20,14 @@ import Button from '../components/Button.astro';
 
 </div>
 
+    
+    <video autoplay loop muted class="absolute z-10 w-auto" width="" height="" autoplay muted loop>
+                    <source src="hero.mov" type="video/mov">
+                    <source src="hero.webm" type="video/webm">
+                </video>
+                
+
 
 </section>
+
+<!-- class="bg-[url('/public/baggrund_mobil.jpg')] bg-cover md:bg-[url('/public/hav_baggrund.jpg')] h-full w-screen" -->

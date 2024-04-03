@@ -14,7 +14,7 @@ module.exports = {
         transparent: "transparent",
         current: "currentColor",
         roed: "#FF1054",
-        tekstblaa: "#ff784f",
+        tekstblaa: "#081F4D",
         morkblaa: "#153677",
         blaa: "#007CF9",
         lysblaa: "#EDF6FF",
