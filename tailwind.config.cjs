@@ -20,6 +20,12 @@ module.exports = {
         lysblaa: "#EDF6FF",
         white: "#ffffff",
       },
+
+      fontFamily: {
+        komu: ["komu-a", "sans-serif"],
+        roboto: ["roboto, sans-serif"],
+        rubik: ["rubik, sans-serif"],
+      },
     },
   },
   plugins: [],
