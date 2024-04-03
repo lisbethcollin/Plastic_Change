@@ -18,6 +18,7 @@ module.exports = {
         morkblaa: "#153677",
         blaa: "#007CF9",
         lysblaa: "#EDF6FF",
+        boelge: "9DE6ED"
         white: "#ffffff",
       },
 
