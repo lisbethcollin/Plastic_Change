@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import tal from '../assets/images/tal.svg';
+import halvfjerds from '../assets/images/70%.svg';
+import toogtyve from '../assets/images/22%.svg';
+import eight from '../assets/images/8%.svg';
 ---
 
 <section class="px-8 mt-20 max-w-6xl mx-auto">
@@ -39,7 +42,19 @@ import tal from '../assets/images/tal.svg';
     </article>
 </section>
 
- <section class="lg:hidden">
-
+ <section class="lg:hidden flex flex-col items-center gap-5 pt-5">
+    <div>        
+        <Image src={halvfjerds} alt="70%" class=""/>
+    <p class="text-center">Hav og miljøindsatser</p>
+</div>
+  <div>        
+        <Image src={toogtyve} alt="22%" class=""/>
+    <p class="text-center">Fundraising og indsamlinger</p>
+</div>
+ <div>        
+        <Image src={eight} alt="8%" class=""/>
+    <p class="text-center">Fundraising og indsamlinger</p>
+</div>
 
  </section>
+
