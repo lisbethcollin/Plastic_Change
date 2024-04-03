@@ -13,23 +13,25 @@ import shirt from '../assets/images/t-shirt.svg';
             <p>Udover at støtte med bidrag og ændre dine egne vaner kan du også støtte plastic change i vores shop. Vi har selvfølgelig sørget for at alle produkterne er fri for plastik. </p>
         </article>
        
-
+<!-- mobil versjon -->
         <article class="grid grid-cols-2 place-items-center lg:hidden">
-            <Image src={shirt} alt="diagram." class=""/>
+            <Image src={shirt} alt="t-shirt" class=""/>
             <div>
-                <Image src={kop} alt="diagram." class=""/>
+                <Image src={kop} alt="kop" class=""/>
            
-            <Image src={termo} alt="diagram." class=""/></div>
-            
+            <Image src={termo} alt="termoflaske" class=""/></div>    
         </article>
 
-          <article class="grid grid-cols-3 gap-4 ">
-            <div><Image src={shirt} alt="diagram." class="hidden lg:block"/></div>
-            <div><Image src={kop} alt="diagram." class="hidden lg:block"/></div>
-            <div><Image src={termo} alt="diagram." class="hidden lg:block"/></div>
-    
+        <div class="justify-self-center lg:hidden"><button>knap</button></div>
+
+<!-- web -->
+        <article class="grid grid-cols-3 gap-4 ">
+            <div><Image src={shirt} alt="t-shirt" class="hidden lg:block"/></div>
+            <div><Image src={kop} alt="kop" class="hidden lg:block"/></div>
+            <div><Image src={termo} alt="termoflaske" class="hidden lg:block"/></div>
         </article>
 
-
+    <div class="grid justify-self-center"> <button class=" hidden lg:block">knap</button></div>
+       
 
 </section>
