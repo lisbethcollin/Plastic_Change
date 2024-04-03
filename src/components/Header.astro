@@ -2,34 +2,61 @@
 import { Image } from 'astro:assets';
 import logo from "../assets/images/logo_plastik.svg"
 import Button from '../components/Button.astro';
+
+
+
 ---
-<div x-data="{ showmenu: false }" class="p-4 fixed w-full" >
-    <div id="navbar" class="flex flex-row justify-between">
+<div x-data="{ showmenu: false }" class="header p-3 fixed w-full z-30" >
+    <div id="navbar" class="flex flex-row justify-between items-center">
         <div id="logo" class="">
             <a href="#link1"> <Image src={logo} alt=""/></a>
 
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-4">
+                <li class="hover:translate-y-[-5px]"><a href="#link1">Hvad er plastikforureningen?</a></li>
+                <li class="hover:translate-y-[-5px]"><a href="#link2">Hvad kan jeg gøre?</a></li>
+                <li class="hover:translate-y-[-5px]"><a href="#link3">Støt vores sag</a></li>
+                <li class="hover:translate-y-[-5px]"><a href="#link4">Shop</a></li>
+                <li class="hover:translate-y-[-5px]"><a href="#link4">Hvem er Plastic Change</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:block">
+          <Button >Støt nu</Button>
+        </div>
+        <button id="burgermenu" class="lg:hidden bg-roed text-white rounded-full shadow-md hover:scale-110 py-3 px-7 text-lg" x-on:click="showmenu = ! showmenu">Menu</button>
+    </div>
+    <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul class="bg-lysblaa text-morkblaa text-2xl font-bold p-7 shadow-md rounded-2xl" >
                 <li class=""><a href="#link1">Hvad er plastikforureningen?</a></li>
                 <li class=""><a href="#link2">Hvad kan jeg gøre?</a></li>
                 <li class=""><a href="#link3">Støt vores sag</a></li>
                 <li class=""><a href="#link4">Shop</a></li>
                 <li class=""><a href="#link4">Hvem er Plastic Change</a></li>
-            </ul>
-        </nav>
-        <div>
-          <Button>Støt nu</Button>
-        </div>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
-    </div>
-    <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
-    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul >
-            <li class="text-center py-2 border-y-2"><a href="#link1">Link 1</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link2">Link 2</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link3">Link 3</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link4">Link 4</a></li>
         </ul>
     </nav>
 </div>
+
+<style>
+
+
+.active {
+  background-color: rgba(21, 54, 119, .80);
+  backdrop-filter: blur(25px);
+
+}</style>
+
+<script>
+import { animate, scroll} from "motion";
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 50) {
+        document.querySelector('.header')?.classList.add('active');
+    } else {
+        document.querySelector('.header')?.classList.remove('active');
+    }
+});
+
+</script>
+
