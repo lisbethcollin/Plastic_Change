@@ -13,7 +13,7 @@ import Button from '../components/Button.astro';
 
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
-            <ul class="flex flex-row gap-4">
+            <ul class="flex flex-row gap-4 font-rubik ">
                 <li class="hover:translate-y-[-5px]"><a href="#link1">Hvad er plastikforureningen?</a></li>
                 <li class="hover:translate-y-[-5px]"><a href="#link2">Hvad kan jeg gøre?</a></li>
                 <li class="hover:translate-y-[-5px]"><a href="#link3">Støt vores sag</a></li>
@@ -28,7 +28,7 @@ import Button from '../components/Button.astro';
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul class="bg-lysblaa text-morkblaa text-2xl font-bold p-7 shadow-md rounded-2xl" >
+        <ul class="bg-lysblaa text-morkblaa text-2xl p-7 shadow-md rounded-2xl font-rubik" >
                 <li class=""><a href="#link1">Hvad er plastikforureningen?</a></li>
                 <li class=""><a href="#link2">Hvad kan jeg gøre?</a></li>
                 <li class=""><a href="#link3">Støt vores sag</a></li>
@@ -44,6 +44,7 @@ import Button from '../components/Button.astro';
 .active {
   background-color: rgba(21, 54, 119, .80);
   backdrop-filter: blur(25px);
+  color: white;
 
 }</style>
 
