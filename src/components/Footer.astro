@@ -9,10 +9,10 @@ import inl from '../assets/images/in.svg';
 import foot from '../assets/images/footerblo.svg';
 ---
 <!-- mobil -->
-<section class="lg:hidden px-8 pt-20 max-w-6xl mx-auto ">
+<section class="lg:hidden px-8 pt-20 max-w-6xl mx-auto  text-lysblaa">
 
     <article class="gap-5">
-        <h2>Følg med her</h2>
+        <h2 class="pb-5 font-roboto font-bold text-4xl">Følg med her</h2>
         <div class="flex flex-wrap gap-4">
             <Image src={x} alt="x" class=""/>
           <Image src={insta} alt="instagram" class=""/>
@@ -21,55 +21,64 @@ import foot from '../assets/images/footerblo.svg';
             <Image src={inl} alt="in" class=""/>
         </div>
          
-        <h2>Tilmeld dig nyhedsbrevet</h2>
-            <div>
+        <h2 class="pt-5 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
+            <div class="pt-5">
                 <button>Din email</button>
                 <button>tilmeld dig her</button>
             </div>
     </article>
     
     <article class="pt-10">
-        <h3 class="">Kontakt</h3>
-        <p>Mail: info@plasicchange.org</p>
-        <p>Tlf: +45 42 66 72 46</p>
-        <p>Telefontid: Mandag - fredag</p>
-        <p>10:00 - 15:00</p>
-
-        <button>støt nu</button>
+        <h3 class="text-2xl font-roboto font-bold pb-5">Kontakt</h3>
+        <p class="font-rubik">Mail: info@plasicchange.org</p>
+        <p class="font-rubik">Tlf: +45 42 66 72 46</p>
+        <p class="font-rubik">Telefontid: Mandag - fredag</p>
+        <p class="font-rubik">10:00 - 15:00</p>
+    <div class="pt-5">
+        <Button >Støt nu</Button>
+    </div>
+        
     </article>
 
 </section>
 <!-- web -->
-<section class="hidden lg:block px-8 pt-20 max-w-6xl mx-auto ">
-
-    <article class="gap-5 grid grid-cols-2">
-        <h2>Følg med her</h2>
-        <div class="flex flex-wrap gap-4">
-            <Image src={x} alt="x" class=""/>
-          <Image src={insta} alt="instagram" class=""/>
-           <Image src={face} alt="faecbook" class=""/>
-            <Image src={you} alt="youtube" class=""/>
-            <Image src={inl} alt="in" class=""/>
-        </div>
-         
-        <h2>Tilmeld dig nyhedsbrevet</h2>
-            <div>
-                <button>Din email</button>
-                <button>tilmeld dig her</button>
-            </div>
-    </article>
+<section class="hidden lg:block px-8 pt-20 max-w-6xl mx-auto  text-lysblaa">
     
-    <article class="pt-10">
-        <h3 class="">Kontakt</h3>
-        <p>Mail: info@plasicchange.org</p>
-        <p>Tlf: +45 42 66 72 46</p>
-        <p>Telefontid: Mandag - fredag</p>
-        <p>10:00 - 15:00</p>
+    <section class="grid grid-cols-2 gap-20">
+        
+        <article class="gap-5 order-2">
+            <h2 class="pb-5 font-roboto font-bold text-4xl">Følg med her</h2>
+                <div class="flex flex-wrap gap-4">
+                    <Image src={x} alt="x" class=""/>
+                <Image src={insta} alt="instagram" class=""/>
+                <Image src={face} alt="faecbook" class=""/>
+                    <Image src={you} alt="youtube" class=""/>
+                    <Image src={inl} alt="in" class=""/>
+                </div>
+         
+            <h2 class="pt-5 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
+                <div class="pt-5">
+                    <button>Din email</button>
+                    <button>tilmeld dig her</button>
+                </div>
+        </article>
+    
+        <article class="pt-10 order-1">
+            <h3 class="text-2xl font-roboto font-bold pb-5">Kontakt</h3>
+            <p class="font-rubik">Mail: info@plasicchange.org</p>
+            <p class="font-rubik">Tlf: +45 42 66 72 46</p>
+            <p class="font-rubik">Telefontid: Mandag - fredag</p>
+            <p class="font-rubik">10:00 - 15:00</p>
 
-        <button>støt nu</button>
-    </article>
+        <div class="pt-5">
+           <Button >Støt nu</Button>
+        </div>
+        </article>
 
+    </section>
+    
 </section>
+
     <Image src={foot} alt="skraldebund" class="w-full h-auto"/>
 
   
