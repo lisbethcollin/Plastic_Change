@@ -15,8 +15,8 @@ import foot from '../assets/images/footerblo.svg';
         <h2 class="pb-5 font-roboto font-bold text-4xl">Følg med her</h2>
         <div class="flex flex-wrap gap-4">
             <Image src={x} alt="x" class=""/>
-          <Image src={insta} alt="instagram" class=""/>
-           <Image src={face} alt="faecbook" class=""/>
+            <Image src={insta} alt="instagram" class=""/>
+            <Image src={face} alt="faecbook" class=""/>
             <Image src={you} alt="youtube" class=""/>
             <Image src={inl} alt="in" class=""/>
         </div>
@@ -58,8 +58,10 @@ import foot from '../assets/images/footerblo.svg';
          
             <h2 class="pt-5 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
                 <div class="pt-5">
-                    <button>Din email</button>
-                    <button>tilmeld dig her</button>
+                    <input type="text"
+                        x-model="email" placeholder="Din email her"
+                        class="py-3 px-1 text-lg rounded-full border-2 border-roed text-roed m-1 text-center focus:border-roed placeholder-lysroed"> 
+                <Button>Tilmeld dig her!</Button>
                 </div>
         </article>
     
