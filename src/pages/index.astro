@@ -12,12 +12,22 @@ import problem from "../assets/images/problem_img.png";
 import om from "../assets/images/om_img.png";
 ---
 <MainLayout title="Titel">
-	<Hero></Hero>
-	<Problemet></Problemet>
+	<Hero id="hero" ></Hero>
+	<section  id="problemet">
+	<Problemet  ></Problemet>
+	</section>
 	<Image src={problem} alt="plastik pose i vand" class="w-full"/>
-	<HvadKanDu></HvadKanDu>
-	<Doner></Doner>
-	<Shop></Shop>
-	<Om></Om>
+<section id="hvadkandu" >
+	<HvadKanDu ></HvadKanDu>
+	</section>
+	<section id="doner">
+	<Doner  ></Doner>
+	</section>
+	<section id="shop" >
+	<Shop ></Shop>
+	</section>
+	<section id="om" >
+	<Om ></Om>
+	</section>
 	<Image src={om} alt="plastik flaske i vand" class="w-full"/>
 </MainLayout>
