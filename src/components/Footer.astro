@@ -1,7 +1,75 @@
 ---
 import Button from '../components/Button.astro';
+import { Image } from 'astro:assets';
+import x from '../assets/images/x.svg';
+import insta from '../assets/images/insta.svg';
+import face from '../assets/images/face.svg';
+import you from '../assets/images/you.svg';
+import inl from '../assets/images/in.svg';
+import foot from '../assets/images/footerblo.svg';
 ---
-<div>
-<p>Footer</p>
-</div>
+<!-- mobil -->
+<section class="lg:hidden px-8 pt-20 max-w-6xl mx-auto ">
+
+    <article class="gap-5">
+        <h2>Følg med her</h2>
+        <div class="flex flex-wrap gap-4">
+            <Image src={x} alt="x" class=""/>
+          <Image src={insta} alt="instagram" class=""/>
+           <Image src={face} alt="faecbook" class=""/>
+            <Image src={you} alt="youtube" class=""/>
+            <Image src={inl} alt="in" class=""/>
+        </div>
+         
+        <h2>Tilmeld dig nyhedsbrevet</h2>
+            <div>
+                <button>Din email</button>
+                <button>tilmeld dig her</button>
+            </div>
+    </article>
+    
+    <article class="pt-10">
+        <h3 class="">Kontakt</h3>
+        <p>Mail: info@plasicchange.org</p>
+        <p>Tlf: +45 42 66 72 46</p>
+        <p>Telefontid: Mandag - fredag</p>
+        <p>10:00 - 15:00</p>
+
+        <button>støt nu</button>
+    </article>
+
+</section>
+<!-- web -->
+<section class="hidden lg:block px-8 pt-20 max-w-6xl mx-auto ">
+
+    <article class="gap-5 grid grid-cols-2">
+        <h2>Følg med her</h2>
+        <div class="flex flex-wrap gap-4">
+            <Image src={x} alt="x" class=""/>
+          <Image src={insta} alt="instagram" class=""/>
+           <Image src={face} alt="faecbook" class=""/>
+            <Image src={you} alt="youtube" class=""/>
+            <Image src={inl} alt="in" class=""/>
+        </div>
+         
+        <h2>Tilmeld dig nyhedsbrevet</h2>
+            <div>
+                <button>Din email</button>
+                <button>tilmeld dig her</button>
+            </div>
+    </article>
+    
+    <article class="pt-10">
+        <h3 class="">Kontakt</h3>
+        <p>Mail: info@plasicchange.org</p>
+        <p>Tlf: +45 42 66 72 46</p>
+        <p>Telefontid: Mandag - fredag</p>
+        <p>10:00 - 15:00</p>
+
+        <button>støt nu</button>
+    </article>
+
+</section>
+    <Image src={foot} alt="skraldebund" class="w-full h-auto"/>
+
   
