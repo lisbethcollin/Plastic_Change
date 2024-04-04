@@ -2,36 +2,23 @@
 import Button from '../components/Button.astro';
 ---
 <section class="relative flex items-center justify-center sm:justify-end h-screen  mb-52 ">
-    
-
-    <div class="relative z-20 flex flex-col justify-end sm:mt-10 gap-10 text-lysblaa sm:mr-16 md:mr-32 lg:mr-44 lx:mr-48">
-
-    <div>
-
-    <h1 class="text-5xl md:text-5xl text-center font-roboto font-bold">#SingleUseSucks</h1>
+    <div class="relative z-20 flex flex-col justify-end sm:mt-10 gap-10 text-lysblaa sm:mr-16 md:mr-32 lg:mr-44 lx:mr-48 -mt-20 md:mt-0">
+        <div>
+            <h1 class="-mt-80 md:mt-0 text-5xl md:text-5xl text-center font-roboto font-bold">#SingleUseSucks</h1>
+        </div>
+        <div class="-mt-72 md:mt-0 flex justify-center align-middle flex-col backdrop-blur bg-lysblaa/40 p-12 md:p-16 gap-5 rounded-2xl ">
+            <Button>Støt nu</Button>
+            <p class=" text-lysblaa font-roboto font-bold text-lg sm:text-2xl text-center">Og bliv en del af løsningen</p>
+        </div>
     </div>
-
-    <div class="flex justify-center align-middle flex-col backdrop-blur bg-lysblaa/40 p-16 gap-5 rounded-2xl ">
-    
-    <Button>Støt nu</Button>
-    <p class=" text-lysblaa font-roboto font-bold text-lg sm:text-2xl">Og bliv en del af løsningen</p>
-    </div>
-
-    </div>
-
-    
     <video autoplay loop muted class="absolute hidden sm:block z-10 w-full" width="" height="" autoplay muted loop>
-                    <source src="hero.mov" type="video/mov">
-                    <source src="hero.webm" type="video/webm">
-                </video>  
-                
-                <video autoplay loop muted class="absolute sm:hidden z-10 w-full " width="" height="" autoplay muted loop>
-                    <source src="hero_mobil.mov" type="video/mov">
-                    <source src="hero_mobil.webm" type="video/webm">
-                </video>
-                
-
-
+        <source src="hero.mov" type="video/mov">
+        <source src="hero.webm" type="video/webm">
+    </video>      
+    <video autoplay loop muted class="absolute sm:hidden z-10 w-full " width="" height="" autoplay muted loop>
+        <source src="hero_mobil.mov" type="video/mov">
+        <source src="hero_mobil.webm" type="video/webm">
+    </video>
 </section>
 
 <!-- class="bg-[url('/public/baggrund_mobil.jpg')] bg-cover md:bg-[url('/public/hav_baggrund.jpg')] h-full w-screen" -->
