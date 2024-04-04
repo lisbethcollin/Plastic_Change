@@ -14,24 +14,26 @@ import foot from '../assets/images/footerblo.svg';
     <article class="gap-5">
         <h2 class="pb-5 font-roboto font-bold text-4xl">Følg med her</h2>
         <div class="flex flex-wrap gap-4">
-            <Image src={x} alt="x" class=""/>
-            <Image src={insta} alt="instagram" class=""/>
-            <Image src={face} alt="faecbook" class=""/>
-            <Image src={you} alt="youtube" class=""/>
-            <Image src={inl} alt="in" class=""/>
+            <Image src={x} alt="x" width="60" height="60" class=""/>
+            <Image src={insta} alt="instagram" width="60" height="60" class=""/>
+            <Image src={face} alt="faecbook" width="60" height="60" class=""/>
+            <Image src={you} alt="youtube" width="60" height="60" class=""/>
+            <Image src={inl} alt="in" width="60" height="60" class=""/>
         </div>
          
-        <h2 class="pt-5 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
-            <div class="pt-5">
-                <button>Din email</button>
-                <button>tilmeld dig her</button>
-            </div>
+        <h2 class="pt-16 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
+        <div class="pt-5">
+            <input type="text"
+                x-model="email" placeholder="Din email her"
+                class="py-3 text-mg rounded-full border-2 border-roed text-roed m-1 text-center focus:border-roed placeholder-lysroed"> 
+        <Button>Tilmeld dig her!</Button>
+        </div>
     </article>
     
     <article class="pt-10">
         <h3 class="text-2xl font-roboto font-bold pb-5">Kontakt</h3>
         <p class="font-rubik">Mail: info@plasicchange.org</p>
-        <p class="font-rubik">Tlf: +45 42 66 72 46</p>
+        <p class="font-rubik">Tlf: +45 42 66 72 46</p> <br>
         <p class="font-rubik">Telefontid: Mandag - fredag</p>
         <p class="font-rubik">10:00 - 15:00</p>
     <div class="pt-5">
@@ -49,18 +51,18 @@ import foot from '../assets/images/footerblo.svg';
         <article class="gap-5 order-2">
             <h2 class="pb-5 font-roboto font-bold text-4xl">Følg med her</h2>
                 <div class="flex flex-wrap gap-4">
-                    <Image src={x} alt="x" class=""/>
-                <Image src={insta} alt="instagram" class=""/>
-                <Image src={face} alt="faecbook" class=""/>
-                    <Image src={you} alt="youtube" class=""/>
-                    <Image src={inl} alt="in" class=""/>
+                    <Image src={x} alt="x" width="60" height="60" class=""/>
+                    <Image src={insta} alt="instagram" width="60" height="60" class=""/>
+                    <Image src={face} alt="faecbook" width="60" height="60" class=""/>
+                    <Image src={you} alt="youtube" width="60" height="60" class=""/>
+                    <Image src={inl} alt="in" width="60" height="60" class=""/>
                 </div>
          
-            <h2 class="pt-5 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
+            <h2 class="pt-16 font-roboto font-bold text-4xl">Tilmeld dig nyhedsbrevet</h2>
                 <div class="pt-5">
                     <input type="text"
                         x-model="email" placeholder="Din email her"
-                        class="py-3 px-1 text-lg rounded-full border-2 border-roed text-roed m-1 text-center focus:border-roed placeholder-lysroed"> 
+                        class="py-3 px-1 mr-6 text-lg rounded-full border-2 border-roed text-roed m-1 text-center focus:border-roed placeholder-lysroed"> 
                 <Button>Tilmeld dig her!</Button>
                 </div>
         </article>
@@ -68,7 +70,7 @@ import foot from '../assets/images/footerblo.svg';
         <article class="pt-10 order-1">
             <h3 class="text-2xl font-roboto font-bold pb-5">Kontakt</h3>
             <p class="font-rubik">Mail: info@plasicchange.org</p>
-            <p class="font-rubik">Tlf: +45 42 66 72 46</p>
+            <p class="font-rubik">Tlf: +45 42 66 72 46</p> <br>
             <p class="font-rubik">Telefontid: Mandag - fredag</p>
             <p class="font-rubik">10:00 - 15:00</p>
 

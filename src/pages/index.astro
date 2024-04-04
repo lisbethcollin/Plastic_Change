@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
 import Hero from "../components/Hero.astro";
 import Problemet from "../components/Problemet.astro";
 import HvadKanDu from "../components/Hvadkandu.astro";
@@ -10,6 +9,7 @@ import Doner from "../components/Doner.astro";
 import { Image } from 'astro:assets';
 import problem from "../assets/images/problem_img.png";
 import om from "../assets/images/om_img.png";
+import om_mobil from "../assets/images/om_img_mobil.png";
 ---
 <MainLayout title="Titel">
 	<Hero id="hero" ></Hero>
@@ -27,7 +27,8 @@ import om from "../assets/images/om_img.png";
 	<Shop ></Shop>
 	</section>
 	<section id="om" >
-	<Om ></Om>
+	<Om></Om>
 	</section>
-	<Image src={om} alt="plastik flaske i vand" class="w-full"/>
+	<Image src={om} alt="plastik flaske i vand" class="w-full hidden md:block"/>
+	<Image src={om_mobil} alt="plastik flaske i vand" class="w-full md:hidden"/>
 </MainLayout>
