@@ -1,4 +1,5 @@
 ---
+import Button from '../components/Button.astro';
 import { Image } from 'astro:assets';
 import img from '../assets/images/doner_img.png';
 ---
@@ -7,6 +8,52 @@ import img from '../assets/images/doner_img.png';
     <article class="py-20 px-8">
         <h2 class="font-roboto font-bold text-4xl lg:text-5xl text-blaa pb-10 text-center">Gør en forskel for fremtiden</h2>
         <p class="font-rubik text-lg">Støtte fra donerer som dig er kritiske for udviklingen af løsninger på udfordringerne med plastik. Doner idag og blen del af vores vision og for en bedre fremtid uden plasik. Uden dig er det ikke muligt</p>
-        <form action=""></form>
+        <form class="font-rubik pt-16 flex flex-col justify-center items-center ">
+            <div x-data="{ selected: null, inputLabel: 'Input Button' }" class="flex">
+                <!-- Radio-like Buttons -->
+                <button type="button" @click="selected = 1"
+                        :class="selected === 1 ? 'bg-roed text-white' : 'bg-white text-roed'"
+                        class="py-3 px-9 text-3xl rounded-l-full cursor-pointer transition-colors border-y-2 border-l-2 border-r-0 border-roed">
+                        Én gang
+                </button>
+                <button type="button" @click="selected = 2"
+                        :class="selected === 2 ? 'bg-roed text-white' : 'bg-white text-roed'"
+                        class="py-3 px-7 text-3xl rounded-r-full cursor-pointer transition-colors border-2 border-roed">
+                        Månedligt
+                </button>
+            </div>
+            
+            <div x-data="{ selected: null, inputLabel: 'Input Button' }" class="text-center pt-10">
+                <!-- Radio-like Buttons -->
+                <button type="button" @click="selected = 1"
+                        :class="selected === 1 ? 'bg-roed text-white' : 'bg-white text-roed'"
+                        class="pb-3 pt-5 px-4 text-5xl rounded-full cursor-pointer transition-colors m-1 border-2 border-roed">
+                        50
+                </button>
+                <button type="button" @click="selected = 2"
+                        :class="selected === 2 ? 'bg-roed text-white' : 'bg-white text-roed'"
+                        class="pb-3 pt-5 px-4 text-5xl rounded-full cursor-pointer transition-colors m-1 border-2 border-roed">
+                        75
+                </button>
+                <button type="button" @click="selected = 3"
+                        :class="selected === 3 ? 'bg-roed text-white' : 'bg-white text-roed'"
+                        class="pb-3 pt-5 px-4 text-5xl rounded-full cursor-pointer transition-colors m-1 border-2 border-roed">
+                        125
+                </button>
+            
+                <!-- Input Field & Button -->
+                <div class="mt-4 pt-8">
+                <input type="text" @click="selected = 4"
+                        x-model="Andet beløb" placeholder="Andet beløb"
+                        class="py-3 px-2 text-3xl rounded-full border-2 border-roed text-roed m-1 text-center focus:border-roed placeholder-"> 
+                <button type="button" 
+                        :class="'bg-roed text-white'"
+                        class="py-3 px-7 text-3xl rounded-full cursor-pointer transition-colors m-1">
+                    <span x-text="Støt nu">Støt nu</span>
+                </button>
+                </div>
+            </div>
+            
+        </form>
     </article>
 </section>
